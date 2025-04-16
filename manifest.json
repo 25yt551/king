@@ -1,0 +1,31 @@
+{
+   "action": {
+      "default_popup": "popup/popup.html",
+      "default_title": "WORM-KING"
+   },
+   "author": "SAMET CAN",
+   "background": {
+      "service_worker": "background.js"
+   },
+   "declarative_net_request": {
+      "rule_resources": [ {
+         "enabled": true,
+         "id": "ruleset_1",
+         "path": "rules.json"
+      } ]
+   },
+   "description": "WORM-KING, Wormate.io'da desen ve sunucu seçmenizi sağlar.",
+   "externally_connectable": {
+      "matches": [ "https://wormateking.com/*" ]
+   },
+   "host_permissions": [ "*://wormate.io/*" ],
+   "icons": {
+      "128": "icon.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAxu1quZ1kT1NKQmAAT7ZXQ96fZ7Q9jADf4JHiduE/MsGuiopHhErUg+XZMGsxbvLBCb5rGrj60kaTADcVsgQ0ZJkONPKcZPT3PmgHbZ5v9+mqx4hX8hGpsA3zuR61BeDrHm76LuWpNRgQuCAgL9FN2m4m68W9utVFBND5EVF+I5KznVhbJgXWLJnM/jrWJjP2GfEUfYkAm5inhvpzPsHcR9BCC9sGbwUbB9HhZa4JI30YdTXjvlm+KKGz3SjwRZrhs/KrKIoZNUeb2/qmKqOBvvnDzDGo9P+jCkIoEWo9khLTrumnnmj6ShYpBC6kh21BGffGnvt1HbzjcZ+QtiYSmQIDAQAB",
+   "manifest_version": 3,
+   "name": "worm king",
+   "permissions": [ "declarativeNetRequest" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.0.0.1"
+}
